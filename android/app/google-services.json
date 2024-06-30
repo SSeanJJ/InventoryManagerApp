@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "731991688341",
+    "project_id": "sjaeger-cmsc4303-flutter",
+    "storage_bucket": "sjaeger-cmsc4303-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:731991688341:android:52ba5c6205745acc3f479c",
+        "android_client_info": {
+          "package_name": "edu.uco.sjaeger.cmsc4303.lesson6"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAT84iJbD4r_Jpc88OcGiqkkmSHMNlQjKQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
