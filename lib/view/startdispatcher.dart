@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:lesson6/controller/auth_controller.dart';
 import 'package:lesson6/view/home_screen.dart';
 import 'package:lesson6/view/signin_screen.dart';
+import 'inventory_screen.dart'; // Import the new screen
 
 class StartDispatcher extends StatelessWidget {
   const StartDispatcher({super.key});
@@ -14,9 +15,9 @@ class StartDispatcher extends StatelessWidget {
     return StreamBuilder<User?>(
       stream: FirebaseAuth.instance.authStateChanges(),
       initialData: null,
-      builder: (BuildContext context, AsyncSnapshot snapshot){
+      builder: (BuildContext context, AsyncSnapshot snapshot) {
         currentUser = snapshot.data;
-        return currentUser == null ? const SignInScreen() : const HomeScreen();
+        return currentUser == null ? const SignInScreen() : const InventoryScreen(); // Navigate to the inventory screen
       },
     );
   }
